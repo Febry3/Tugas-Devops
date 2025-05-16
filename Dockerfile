@@ -1,4 +1,4 @@
-FROM composer:lts AS deps
+FROM composer:lts AS test
 WORKDIR /app
 RUN --mount=type=bind,source=composer.json,target=composer.json \
  --mount=type=bind,source=composer.lock,target=composer.lock \
